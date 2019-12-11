@@ -1,0 +1,48 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="register">
+            <form method="post" action="ChangeProduct1">  
+                <div class="  register-top-grid">
+                    <h3 style="color: #198ab1;">Thông tin sản phẩm</h3>
+                    <div class="mation">
+                  <div class="row1">      <label class="label1">Mã sản phẩm</label>
+                      <input type="text" name="ProductID" value="${Product.getProductID()}" style="display: none">
+                        <input type="text" id="ProductID" name="ProductID1" value="${Product.getProductID()}">
+    </div>
+                        <div class="row1">      <label class="label1">Tên sản phẩm</label>
+                        <input type="text" id="ProductName" name="ProductName" value="${Product.getProductName()}">
+    </div>
+<!--    <div class="row1">      <label class="label1">Ảnh sản phẩm</label>
+                        <input type="file" id="ImageProduct" name="ImageProduct" value="pc.jpg">
+    </div>-->
+                         
+                        
+                        <div class="row1">      <label class="label1" style="
+    font-size: 17px;
+    padding-top: 15px;
+">Số lượng trong kho</label>
+                        <input type="text" id="Quantity" name="Quantity" value="${Product.getNumberInStorage()}">
+    </div>
+                         
+                        <div class="row1">      <label class="label1">Giá gốc</label>
+                        <input type="text" id="Price" name="Price" value="${Product.getPrice1()}">
+    </div><div class="row1">      <label class="label1">Khuyến mãi</label>
+                        <input type="text" id="Sale" name="Sale" value="${Product.getSaleOff()}">
+    </div>
+    
+    <label class="label1">Nhãn hiệu</label>
+                        <input type="text" id="Sale" name="Company" value="${Product.getCompany()}">
+    </div>
+                         
+                   
+                        
+                        
+                    <div class="clearfix"> </div>    
+                </div>
+                <div class="register-but">
+                    <input type="submit" value="Sửa đổi">
+                    <a href="deleteProduct?ProductID=${Product.getProductID()}" style="
+    margin-left: 29px;
+"><input type="button" value="Xóa sản phẩm" class="xanh"></a>
+                </div></form>
+        </div>

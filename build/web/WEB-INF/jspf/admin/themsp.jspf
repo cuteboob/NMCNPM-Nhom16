@@ -1,0 +1,50 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="register">
+            <form method="post" action="ChangeProduct" enctype="multipart/form-data">  
+                <div class="  register-top-grid">
+                    <h3 style="color: #198ab1;">Thêm sản phẩm mới</h3>
+                    <div class="mation">
+                  <div class="row1">      <label class="label1">Mã sản phẩm</label>
+                        <input type="text" id="ProductID" name="ProductID" placeholder="${Product.getProductID()}">
+    </div>
+                        <div class="row1">      <label class="label1">Tên sản phẩm</label>
+                        <input type="text" id="ProductName" name="ProductName" placeholder="${Product.getProductName()}">
+    </div>
+    <div class="row1">      <label class="label1" style="
+    margin-right: 27px;
+">Ảnh sản phẩm</label>
+                        <input type="file" id="ImageProduct" name="ImageProduct" placeholder="pc.jpg">
+    </div>
+                         
+                        
+                        <div class="row1">      <label class="label1" style="
+    font-size: 17px;
+    padding-top: 15px;
+">Số lượng trong kho</label>
+                        <input type="text" id="Quantity" name="Quantity" placeholder="${Product.getNumberInStorage()}">
+    </div>
+                         
+                        <div class="row1">      <label class="label1">Giá gốc</label>
+                        <input type="text" id="Price" name="Price" placeholder="${Product.getPrice()}">
+    </div><div class="row1">      <label class="label1">Khuyến mãi</label>
+                        <input type="text" id="Sale" name="Sale" placeholder="${Product.getSaleOff()}">
+    </div>
+    <label class="label1">Chi tiết cấu hình</label>
+                        <input type="text" id="Sale" name="Detail" placeholder="${Product.getSaleOff()}">
+    </div>
+    <label class="label1">Nhãn hiệu</label>
+                        <input type="text" id="Sale" name="Company" placeholder="${Product.getSaleOff()}">
+    </div>
+                         
+                   
+                        
+                        
+                    <div class="clearfix"> </div>    
+                </div>
+                <div class="register-but">
+                    <input type="submit" value="Thêm sản phẩm" style="
+    margin-left: 27px;
+">
+                </div></form>
+        </div>

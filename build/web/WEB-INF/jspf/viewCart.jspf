@@ -1,0 +1,31 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<div id="product-list">
+    <%
+        try {
+            int cost = 0;
+            Product p = new Product();
+            for (Integer i = 0; i<CartList.size(); i++) {
+        out.println("<div class=\"lol\">");     
+        out.println("<label class=\"lol1\">Số lượng: ");
+        out.println(CartList.get(i).getQuantity());
+        out.println("</label>");
+        out.println("<label class=\"lol2\">Tên sản phẩm: ");
+        out.println(CartList.get(i).getProductName());
+        out.println("</label>");
+        out.println("<label class=\"lol3\">Giá: ");
+        out.println(CartList.get(i).getSale());
+        out.println("</label>");
+        out.println("</div>");
+        cost=cost+CartList.get(i).getQuantity()*CartList.get(i).getSale1();
+        }
+            out.println("<label class=\"lol3\" style=\"float: left;font-weight: 500;font-size: 20px;\">Tổng tiền: ");
+            p.setPrice(cost);
+            out.print(p.getPrice());
+            out.print(" VNĐ");
+            out.println("</label>");
+            out.println("<div class=\"cart\" style=\"float: right;margin-right: -45px;margin-top: 3px;\"><a href=\"thanhtoan\"><span> </span>Thanh toán</a></div>");
+        } catch (NullPointerException e) {
+            out.println("<h1>Bạn chưa thêm sản phẩm nào vào giỏ hàng</h1>");
+        }
+        %>
+</div>

@@ -1,0 +1,25 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<div class="register">
+             <div class="  register-top-grid">
+                    <h3>Thông tin cá nhân</h3>
+                    <div class="mation">
+                        <span>Họ và tên: </span> <h4><% 
+                                 out.print(session.getAttribute("fullName"));
+                             %></h4>
+                        <span>Giới tính: </span> <h4><% 
+                                 out.print(session.getAttribute("sex"));
+                             %></h4>
+                        <span>Ngày sinh</span> <h4><% 
+                                 out.print(session.getAttribute("birthDay"));
+                             %></h4>
+                        <span>Địa chỉ Email</span> <h4><% 
+                                 out.print(session.getAttribute("email"));
+                             %></h4>
+                        <span>Số điện thoại</span> <h4><% 
+                                 out.print(session.getAttribute("phoneNumber"));
+                             %></h4>
+                   
+                    
+                    <div class="clearfix"> </div>    
+                </div>
+        </div>

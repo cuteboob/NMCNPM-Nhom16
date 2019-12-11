@@ -1,0 +1,113 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<div class="shoes-grid">
+   <a href="single.jsp">
+    </a><div class="wrap-in">
+        <div class="wmuSlider example1 slide-grid">		 
+				   <div class="wmuSliderWrapper">
+                                        <c:forEach var="product" items="${slideProduct}">
+                                                 <article style="position: absolute; width: 100%; opacity: 0;">					
+						<div class="banner-matter">
+						<div class="col-md-5 banner-bag">
+							<a href="single?ProductID=${product.getProductID()}"><img class="img-responsive " src="img/${product.getImage()}" alt=" " />
+                                                        </a>
+                                                    </div>
+							<div class="col-md-7 banner-off">		
+                                                                <h4 style="font-weight: bold;">${product.getProductName()}</h4>
+								<h2>${product.getPromotion()}</h2>
+								<label>Giá <b>${product.getPrice()} VNĐ</b></label>
+                                                                <p> </p>					
+<!--                                                                </br>-->
+                                                                <a href="cart?Cart=${product.getProductID()}"><span class="on-get">MUA NGAY</span></a>
+							</div>
+							
+							<div class="clearfix"> </div>
+						</div>
+						
+					 	</article>
+                                        </c:forEach>
+					   
+<!--					 	<article style="position: absolute; width: 100%; opacity: 0;">					
+						<div class="banner-matter">
+						<div class="col-md-5 banner-bag">
+							<img class="img-responsive " src="images/bag1.jpg" alt=" " />
+							</div>
+							<div class="col-md-7 banner-off">							
+								<h2>FLAT 50% 0FF</h2>
+								<label>FOR ALL PURCHASE <b>VALUE</b></label>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>					
+								<span class="on-get">GET NOW</span>
+							</div>
+							
+							<div class="clearfix"> </div>
+						</div>
+						
+					 	</article>
+					 	<article style="position: absolute; width: 100%; opacity: 0;">					
+						<div class="banner-matter">
+						<div class="col-md-5 banner-bag">
+							<img class="img-responsive " src="images/bag.jpg" alt=" " />
+							</div>
+							<div class="col-md-7 banner-off">							
+								<h2>FLAT 50% 0FF</h2>
+								<label>FOR ALL PURCHASE <b>VALUE</b></label>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>					
+								<span class="on-get">GET NOW</span>
+							</div>
+							
+							<div class="clearfix"> </div>
+						</div>
+						
+					 	</article>-->
+						
+					 </div>
+					 </a>
+	                <ul class="wmuSliderPagination">
+	                	<li><a href="#" class="">0</a></li>
+	                	<li><a href="#" class="">1</a></li>
+	                	<li><a href="#" class="">2</a></li>
+	                </ul>
+					 <script src="js/jquery.wmuSlider.js"></script> 
+				  <script>
+	       			$('.example1').wmuSlider();         
+	   		     </script> 
+	            </div>
+    </div>
+
+    <!---->
+    <div class="shoes-grid-left">
+        <a href="promotion?promotion=1">				 
+            <div class="col-md-6 con-sed-grid">
+
+                <div class=" elit-grid"> 
+
+                    <h4>Khuyến mãi 30%</h4>
+                    <label>Mua ngay, thời gian có hạn</label>
+                    <p>Laptop giảm giá 30% trong mùa khuyến mãi</p>
+                    <span class="on-get">Lựa chọn sản phẩm</span>						
+                </div>						
+                <img class="img-responsive shoe-left" src="img/sale_sticker_icon_vector_289474 - Copy (4).jpg" alt=" ">
+
+                <div class="clearfix"> </div>
+
+            </div>
+        </a>
+        <a href="promotion?promotion=2">	
+            <div class="col-md-6 con-sed-grid sed-left-top">
+                <div class=" elit-grid"> 
+                    <h4>Khuyến mãi 20%</h4>
+                    <label>Mua ngay, thời gian có hạn</label>
+                    <p>Laptop giảm giá 20%, ngại gì mà không mua</p>
+                    <span class="on-get">GET NOW</span>
+                </div>		
+                <img class="img-responsive shoe-left" src="img/sale_sticker_icon_vector_289474 - Copy (3).jpg" alt=" ">
+
+                <div class="clearfix"> </div>
+            </div>
+        </a>
+    </div>
+
+
+
+
+    <div class="clearfix"> </div>
+</div>

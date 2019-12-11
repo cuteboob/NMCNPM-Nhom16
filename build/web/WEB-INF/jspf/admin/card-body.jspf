@@ -1,0 +1,73 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<div class="card-body">
+            <div class="table-responsive">
+              <div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12 col-md-6"><div id="dataTable_filter" class="dataTables_filter"></div></div></div><div class="row"><div class="col-sm-12"><div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12"><div id="dataTable_wrapper" class="dataTables_wrapper dt-bootstrap4"><div class="row"><div class="col-sm-12">
+                                                  <table class="table table-bordered dataTable" id="dataTable" width="100%" cellspacing="0" role="grid" aria-describedby="dataTable_info" style="width: 100%;">
+<!--                <thead>
+                  <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Name: activate to sort column descending" style="width: 168px;" aria-sort="ascending">Name</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Position: activate to sort column ascending" style="width: 262px;">Position</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Office: activate to sort column ascending" style="width: 122px;">Office</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Age: activate to sort column ascending" style="width: 57px;">Age</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Start date: activate to sort column ascending" style="width: 119px;">Start date</th><th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" aria-label="Salary: activate to sort column ascending" style="width: 97px;">Salary</th></tr>
+                </thead>-->
+<!--                <thead>-->
+                  <tbody><tr><th rowspan="1" colspan="1">Tên khách hàng</th><th rowspan="1" colspan="1">Tài khoản khách</th><th rowspan="1" colspan="1">Thời gian</th><th rowspan="1" colspan="1">Tổng tiền (VNĐ)</th><th rowspan="1" colspan="1">Chi tiết</th></tr>
+<!--                </thead>-->
+                
+
+                  <tr role="row" class="hide" style="display: none;">
+                    <td class="sorting_1">2</td>
+                    <td colspan="2">Asus x542</td>
+                    <td>13000000</td>
+                  </tr>
+                  <tr role="row" class="hide" style="display: none;">
+                    <td class="sorting_1">3</td>
+                    <td colspan="2">HP</td>
+                    <td>12000000</td>
+                  </tr>
+                  
+                  <c:forEach var="order" items="${List}">
+                      <tr role="row" class="odd" style="
+">
+<!--                            private String UserName;
+    private String FullName;
+    private String time;
+    private String Price;-->
+                    <td class="sorting_1">${order.getFullName()}</td>
+                    <td>${order.getUserName()}</td>
+                    <td>${order.getTime()}</td>
+                    <td>${order.getPrice()}</td>
+                    <td><div><button class="btna"><i class="fa fa-arrow-down"></i></button>
+  
+</div></td>
+  
+                  </tr>
+                        <tr role="row" class="hide" style="display: none;">
+                    <td class="sorting_1" style="
+    font-weight: bold;
+">Số lượng</td>
+                    <td colspan="2" style="
+    font-weight: bold;
+">Tên Laptop</td>
+                    <td style="
+    font-weight: bold;
+">Giá tiền (VNĐ)</td>
+                  </tr>
+                    <c:forEach var="product" items="${order.getP()}">         
+                  <tr role="row" class="hide" style="display: none;">
+                    <td class="sorting_1">${product.getQuantity()}</td>
+                    <td colspan="2">${product.getProductName()}</td>
+                    <td>${product.getSale()}</td>
+                  </tr>
+                  </c:forEach>
+                  <tr role="row" class="hide" style="display: none;">
+                  <td colspan="5" style="background: white;"><a href="/NMCNPM-Nhom16/admin/deleteOrder?OrderID=${order.getOrderID()}" style="
+    float: right;
+    font-size: larger;
+    margin-right: 27px;
+">Xóa đơn hàng</a></td>
+                  </tr>
+                 </c:forEach>
+              </tbody></table>
+                                              </div></div></div></div></div></div></div></div>
+<!--                  <div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="dataTable_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="dataTable_previous"><a href="#" aria-controls="dataTable" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="dataTable" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="2" tabindex="0" class="page-link">2</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="3" tabindex="0" class="page-link">3</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="4" tabindex="0" class="page-link">4</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="5" tabindex="0" class="page-link">5</a></li><li class="paginate_button page-item "><a href="#" aria-controls="dataTable" data-dt-idx="6" tabindex="0" class="page-link">6</a></li><li class="paginate_button page-item next" id="dataTable_next"><a href="#" aria-controls="dataTable" data-dt-idx="7" tabindex="0" class="page-link">Next</a></li></ul></div></div></div>-->
+              </div>
+            </div>
+          </div>

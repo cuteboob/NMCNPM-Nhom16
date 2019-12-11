@@ -1,0 +1,53 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<div id="product-list">
+    <c:forEach var="product" items="${productList}">
+        <div class="col-md-4 chain-grid">
+            <a href="single?ProductID=${product.getProductID()}"><img class="img-responsive chain" src="img/${product.getImage()}" alt=" "></a>
+            <span class="star" style="background-image: url('img/${product.getPromotionIcon()}');height: 171px;width: 174px;transform: scale(0.27,0.27) translate(119%, -130%);"></span>
+            <div class="grid-chain-bottom">
+                <h6><a href="single?ProductID=${product.getProductID()}">${product.getProductName()}</a></h6>
+                <div class="star-price">
+                    <div class="dolor-grid"> 
+                        <span class="actual">${product.getSale()} VNĐ</span><br>
+                        <span class="reducedfrom">${product.getPrice()} VNĐ</span>
+                        <span class="rating">
+                            <input type="radio" class="rating-input" id="rating-input-1-5" name="rating-input-1">
+                            <label for="rating-input-1-5" class="rating-star1"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-4" name="rating-input-1">
+                            <label for="rating-input-1-4" class="rating-star1"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-3" name="rating-input-1">
+                            <label for="rating-input-1-3" class="rating-star"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-2" name="rating-input-1">
+                            <label for="rating-input-1-2" class="rating-star"> </label>
+                            <input type="radio" class="rating-input" id="rating-input-1-1" name="rating-input-1">
+                            <label for="rating-input-1-1" class="rating-star"> </label>
+                        </span>
+                    </div>
+                    <a class="now-get get-cart" href="cart?Cart=${product.getProductID()}">Thêm vào giỏ hàng</a> 
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+    </c:forEach>
+    <div class="page">
+        <ul class="pager">
+            <c:if test="${currentPage != 1}">
+                <li><a href="product?page=${currentPage - 1}">Previous</a></li>
+            </c:if>
+            <c:forEach begin="1" end="${noOfPages}" var="i">
+                <c:choose>
+                    <c:when test="${currentPage eq i}">
+                        <li>${i}</li>
+                    </c:when>
+                    <c:otherwise>
+                        <li><a href="product?page=${i}">${i}</a></li>
+                    </c:otherwise>
+                </c:choose>
+            </c:forEach>
+            <c:if test="${currentPage lt noOfPages}">
+                <li><a href="product?page=${currentPage + 1}">Next</a></li>
+            </c:if>
+        </ul>
+    </div>
+
+</div>
