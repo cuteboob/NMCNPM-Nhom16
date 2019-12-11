@@ -8,7 +8,7 @@ Website sử dụng IDE Neatbean, webserver glassfish 4.0, database: sqlserver
 
   - Restore database tải ở đây: [SalesWebsite.bak](https://drive.google.com/file/d/1gEYIV4J0USCaRQO1ntoBwAa7zwy2Y07B/view?usp=sharing)
   
-  - Tải 2 file [jstl-1.2.jar](https://drive.google.com/file/d/1C4tFNimev5tOioIzTYASBmVGgEdh5QbW/view?usp=sharing) và [sqljdbc4-2.0.jar](https://drive.google.com/file/d/1HVrNOwQALe88e_c72DHn1nWd0_3VGVHs/view?usp=sharing), copy vào thư mục ..\glassfish-4.0\glassfish\lib trong glassfish của bạn.
+  - Tải 2 file [jstl-1.2.jar](https://drive.google.com/file/d/1C4tFNimev5tOioIzTYASBmVGgEdh5QbW/view?usp=sharing) và [sqljdbc4-2.0.jar](https://drive.google.com/file/d/1HVrNOwQALe88e_c72DHn1nWd0_3VGVHs/view?usp=sharing), copy vào thư mục ..\glassfish-4.0\glassfish\lib trong glassfish4.0 của bạn.
   
   - Tạo Ressources JDBC: jdbc/SalesWebsite trong giao diện Domain Admin Console (http://localhost:4848)
 
