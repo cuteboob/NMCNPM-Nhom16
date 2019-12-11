@@ -21,15 +21,16 @@ Phần admin có thể đăng nhập vào một trong các tài khoản 
 - Tên đăng nhập: VanHiep, Mật khẩu: 1
 
 
-Website có các chức năng sau: </br>
-*) Phần front-end
+Website có các chức năng:</br>
+Phần front-end
   - Tìm kiếm theo tên sản phẩm 
   - Lọc theo hãng, tầm giá 
   - Sắp xếp theo tên, theo giá
   - Lọc theo khuyến mãi
   - Đăng nhập, đăng xuất
-  - Giỏ hàng, thanh toán </br>
-*) Phần back-end
+  - Giỏ hàng, thanh toán
+</br>
+Phần back-end
   - Xem thông số bán hàng (số máy bán ra trong 7 ngày gần nhất, top 3 nhãn hiệu bán chạy, ...)
   - Quản lý đơn hàng (xem đơn hàng, xóa đơn hàng)
   - Quản lý sản phẩm (thêm sản phẩm, sửa đổi thông tin sản phẩm)
