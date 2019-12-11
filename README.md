@@ -4,7 +4,7 @@ Phần Source code bài tập lớn môn học NMCNPM của nhóm 16
 Website sử dụng IDE Neatbean, webserver glassfish 4.0, database: sqlserver
 
 
-##Để demo web, cần thực hiện các bước sau:
+## Để demo web, cần thực hiện các bước sau:
 
   - Restore database tải ở đây: [SalesWebsite.bak](https://drive.google.com/file/d/1gEYIV4J0USCaRQO1ntoBwAa7zwy2Y07B/view?usp=sharing)
   
@@ -13,7 +13,7 @@ Website sử dụng IDE Neatbean, webserver glassfish 4.0, database: sqlserver
   - Tạo Ressources JDBC: jdbc/SalesWebsite trong giao diện Domain Admin Console (http://localhost:4848)
 
 
-##Để đăng nhập vào giao diện admin, vào link http://localhost:8080/NMCNPM-Nhom16/admin </br>
+## Để đăng nhập vào giao diện admin, vào link http://localhost:8080/NMCNPM-Nhom16/admin </br>
 Phần admin có thể đăng nhập vào một trong các tài khoản sau.
 - Tên đăng nhập: VanTrung, Mật khẩu: 1
 - Tên đăng nhập: MinhTuan, Mật khẩu: 1
@@ -21,7 +21,7 @@ Phần admin có thể đăng nhập vào một trong các tài khoản 
 - Tên đăng nhập: VanHiep, Mật khẩu: 1
 
 
-##Website có các chức năng:</br>
+## Website có các chức năng:
 
 Phần front-end
   - Tìm kiếm theo tên sản phẩm 
