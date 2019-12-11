@@ -1,7 +1,7 @@
 # NMCNPM-Nhom16
 
 Phần Source code bài tập lớn môn học NMCNPM của nhóm 16</br>
-Website sử dụng IDE Neatbean, webserver glassfish 4.0, database: sqlserver
+Website sử dụng IDE Netbean, webserver glassfish 4.0, database: sqlserver
 
 
 ## Để demo web, cần thực hiện các bước sau:
