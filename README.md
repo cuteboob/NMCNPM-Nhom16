@@ -14,7 +14,7 @@ Website sử dụng IDE Netbean, webserver glassfish 4.0, database: sqlserver
 
 
 ## Để đăng nhập vào giao diện admin, vào link http://localhost:8080/NMCNPM-Nhom16/admin </br>
-Phần admin có thể đăng nhập vào một trong các tài khoản sau.
+Phần admin có thể đăng nhập bằng một trong các tài khoản sau.
 - Tên đăng nhập: VanTrung, Mật khẩu: 1
 - Tên đăng nhập: MinhTuan, Mật khẩu: 1
 - Tên đăng nhập: PhoBen, Mật khẩu: 1
