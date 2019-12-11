@@ -13,22 +13,22 @@ Website sử dụng IDE Neatbean, webserver glassfish 4.0, database: sqlserver
   - Tạo Ressources JDBC: jdbc/SalesWebsite trong giao diện Domain Admin Console (http://localhost:4848)
 
 
-Để đăng nhập vào giao diện admin, vào link http://localhost:8080/NMCNPM-Nhom16/admin
+Để đăng nhập vào giao diện admin, vào link http://localhost:8080/NMCNPM-Nhom16/admin </br>
 Phần admin có thể đăng nhập vào một trong các tài khoản sau.
-Tên đăng nhập: VanTrung, Mật khẩu: 1
-Tên đăng nhập: MinhTuan, Mật khẩu: 1
-Tên đăng nhập: PhoBen, Mật khẩu: 1
-Tên đăng nhập: VanHiep, Mật khẩu: 1
+- Tên đăng nhập: VanTrung, Mật khẩu: 1
+- Tên đăng nhập: MinhTuan, Mật khẩu: 1
+- Tên đăng nhập: PhoBen, Mật khẩu: 1
+- Tên đăng nhập: VanHiep, Mật khẩu: 1
 
 
-Website có các chức năng sau: 
+Website có các chức năng sau: </br>
 *) Phần front-end
   - Tìm kiếm theo tên sản phẩm 
   - Lọc theo hãng, tầm giá 
   - Sắp xếp theo tên, theo giá
   - Lọc theo khuyến mãi
   - Đăng nhập, đăng xuất
-  - Giỏ hàng, thanh toán
+  - Giỏ hàng, thanh toán </br>
 *) Phần back-end
   - Xem thông số bán hàng (số máy bán ra trong 7 ngày gần nhất, top 3 nhãn hiệu bán chạy, ...)
   - Quản lý đơn hàng (xem đơn hàng, xóa đơn hàng)
